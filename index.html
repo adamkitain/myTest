@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+    <script src="bars.js"></script>
+    <link rel="stylesheet" href="bars.css">
+</head>
+<body>
+<h2>Bar Graph</h2>
+<div ng-controller="BarGraphCTRL">
+    <table>
+        <tr class="Bar"><td width="{{barWidth}}">
+            {{barWidth}}
+            </td></tr>
+    </table>
+
+    <button ng-click="subtract()" class="btn">Sub</button>
+
+    <input type="text" ng-model="deltaVal" size="10"
+           placeholder="Change">
+    <button ng-click="add()" class="btn">Add</button>
+
+</div>
+</body>
+</html>
